@@ -143,7 +143,7 @@ public class ShoppostLinks {
 		ScreenShots ss = new ScreenShots(driver, _td, _sld, _ltd, _browsName, m);   //screenshot of platform signup
 		
 		signup = new SignUpIn(driver, _td);   //signup methods
-		SignOut logout = new SignOut(driver);  //signout methods
+		SignOut logout = new SignOut(driver);  //instantiate signout methods
 		
 		catalog = PageFactory.initElements(driver, ProductCatalog.class);  //instantiate the pageOject 
 		analyticsReporter = PageFactory.initElements(driver, AnalyticsReporter.class);  //instantiate the pageOject 
