@@ -1,0 +1,165 @@
+{
+	"baseUrl":"http://app.shoppost.com/login",
+	"shopifyShareUrl":"http://merchant.shoppost.com/shopify/product/231241242/share?access_token=hello",
+	"shopifyDashUrl":"http://merchant.shoppost.com/shopify/dashboard?access_token=hellomyfriend",
+	"lpUrlPre1":"http://share.shoppost.com/08d118b8-e9b6-7749-b746-9c0bacd70f5b",
+	"lpUrlPre2":"http://share.shoppost.com/08d118f5-67b9-fdf0-b746-9c0bacd70f85",
+	"lpUrlPre3":"http://share.shoppost.com/08d118f3-62a6-1cf7-b746-9c0bacd70f82",
+	"lpUrlPre4":"http://share.shoppost.com/08d118e2-34ee-83ff-b746-9c0bacd70f80",
+	
+	"usernameShopify2":"newnice@nuclearsharks.com",
+	"usernameShopify":"squintymcblinded@sharklaser.com",
+	"passwordShopify":"DishDish",
+	"shopifyShopUrl2":"https://new-nice.myshopify.com/admin/",
+	"shopifyShopUrl":"https://shiny-sparkle-store.myshopify.com/admin/",
+	
+	
+	"username":"test001@mark.com",
+	"password":"DishDish",
+	"usernameFB":"mark.morgan@zantler.com",
+	"passwordFB":"moreaboutMoosh",
+	"usernameTwitter":"MooshGaloosh",
+	"passwordGoog":"F15hZ00mG33",
+		
+		
+	"acctSetTests":
+	  {
+	    "testsPossibles":[ "generateNewUser", "acctMenuFunction", "homeRedirect", "busProfile", "storeDetails", "amazon", "paypal", "subscription", "notifications", "changePW" ],
+		"acctTestCase2":[  "signIn", "generateNewUser", "acctMenuFunction", "homeRedirect", "busProfile", "storeDetails", "amazon", "paypal", "subscription", "notifications" ],
+		"tests":[  "signIn", "storeDetails" ],
+		"widths": [320, 600, 900 ]
+		
+	  },
+	"signupinTests":
+	  {
+	    "newUsername":"test",
+		"halfPassword":"Dish",
+		"tcFolder":"",
+		"signUpTestsPossibles":[ "signupValid", "alreadyExist","signupInvalidEmail",  "signupBlankEmail", "signupNoPW", "signupNoConfirmPW", "signupShortPW", "signupMismatchPW" ],
+		"signInTestPossibles": [ "signinValid", "signinValidRemember", "signinBlankEmail", "signinEmailBlankPW", "signinInvalidEmail", "signinBadUsername", "signinBadPW" ],
+		"tests":[  "signinValid", "signinValidRemember", "signinBlankEmail", "signinEmailBlankPW", "signinInvalidEmail", "signinBadUsername", "signinBadPW" ],
+		"widths": [320, 600, 900 ]
+		
+	  },
+	  
+	"signupinFBTests":
+	  {
+		"testsPossibles":[ "signupValid", "alreadyExist", "signupBlankEmail", "signupInvalidEmail", "signupNoPW", "signupShortPW", "signupMismatchPW", "signupNoTandC", "userAgreement", "alreadyMemberBtn", "signinValid", "signinBlankEmail", "signinEmailBlankPW", "signinInvalidEmail", "signinBadUsernameBadPW", "forgotPassword", "signUp", "getHelp" ],
+		"tests":[   "shareModalTest" ],
+		"widths": [320, 600, 900 ]
+		
+	  },
+	  
+	"catalogTests":
+	  {
+		"productURL2":"http://www.walmart.com/ip/Apple-iPod-touch-5th-Generation-Black-Refurbished/27873088",
+		"productURL3":"http://www.bedbathandbeyond.com/store/product/All-Clad-B3-Hard-Anodized-Bonded-Induction-Aluminum-10-Piece-Cookware-Set-and-Open-Stock/204750",
+		"productURL4":"http://www.homedepot.com/p/Philips-25W-Equivalent-Soft-White-2700K-B11-Candelabra-Base-LED-Light-Bulb-E-424473/203118328",
+		"productURL5":"http://www.bedbathandbeyond.com/store/product/NutriBullet-reg-Pro-900-Series/1042213574",
+		"store":"WM",
+		"productURL":"http://www.walmart.com/ip/Nikon-16-MP-26467/35151887",
+		"store2":"BBB",
+		"store3":"HD",
+		"tcFolder":"CatalogView",
+		"testsPossibles":[ "addProductValidURL", "addProductInvalidURL", "addProductAndCancel", "shareModalTest", "addProductViaDashboard",  "noProductDisplay", "deleteProductViaHover", "deleteProductViaModalShare", "deleteProductViaModalStats", "cancelDeleteProduct","viewRandomStats","viewRandomStatsViaShare", "viewSingleStatsViaDashMS", "viewSingleStatsViaDashMR" ],
+		"tests":[   "shareModalTest" ],
+		"widths": [320, 600, 900 ]
+		
+
+		
+	  },
+	  
+	"shareData":
+	  {
+		"googComment":"from the world of test automation",
+		"testsPossibles":[ "confirmFBShare", "confirmTwitterShare", "confirmPinterestShare", "confirmGooglePlusShare", "openShopifyModal", "linkTab", "embedTab", "shareTab", "statsTab", "previewLandingPage", "viewRandomStats", "viewRandomStatsViaShare", "viewSingleStatsViaDashMS", "viewSingleStatsViaDashMR" ],
+		"tests":[  "openShopifyModal", "linkTab", "embedTab", "shareTab", "statsTab" ],
+		"shareMessage":"Greetings from Shoppost Auto-Test",
+		"moreTweet":"Another sweet auto-tweet",
+		"shopifyEmail":"markiemark@sharklasers.com",
+		"shopifyStorename":"the-bigger-spoon-emporium",
+		"shopifyPassword":"spoonspoon",
+		"shopifyLoginUrl":"https://www.shopify.com/login",
+		"widths": [320, 600, 900 ]
+		
+		
+	  },
+
+	"analyticsTests":
+	  {
+		"productURL":"http://www.walmart.com/ip/Red-Special-Edition-Widescreen/15608958",
+		"googComment":"from the world of test automation",
+		"tcFolder":"ShopifyDash",
+		"testsPossibles":[ "buildFullAnalyticsDataMap", "buildProdAnalyticsDataMap", "preProdDashSS", "postProdDashSS", "shopifyToFB", "shopifyToTwitter", "shopifyToPinterest", "shopifyToGoogle" ],
+		"tests":[  "preProdDashSS", "shopifyToFB" ],
+		"widths": [320, 600, 900 ]
+	  },
+
+	  
+	"uiData":
+	  {
+	    "tcFolder":"UIResponsive",
+		"testsPossibles":[ "home", "signUp","signIn", "dashboard", "catalog", "modalWindow", "forgotPassword", "resetPassword" , "acctSetting", "landingPage", "shopifyShareModal", "shopifyDashboard" ],
+		"tests":[  "landingPage"  ],
+		"widths": [ 320, 600, 900 ]
+		
+	  },  
+
+	
+	"landingPageData":
+	  {
+	    "tcFolder":"LandPage",
+		"productNumber":"1",
+		"testsPossibles":[  "makeNoVariationsProduct", "makeVariationsProduct", "checkUINoVarsLandingPage", "checkUIVarsLandingPage", "verifyLPElements", "checkLandingPageLinks", "checkLPBuyBtn", "verifyContCheckoutBtn", "verifyPayPalPurchase", "verifyAmazonPurchase", "checkLPNoInventory", "checkInventoryPostPurchase" ],
+		"tests":[  "pinterestShare", "googlePlusShare" ],
+		"comments":"1/10/14 checked tests up to checkUINoVarsLandingPage",
+		"newOption": [ "Feathers", "many", "few" ],
+		"widths": [ 320, 600, 900 ]
+		
+		
+	  },
+	"widgetTests":
+	  {
+	    "noVProduct": [ "My Best Test", "This is a test product but it is my very best test, best i've ever had (and that's saying something)", "one", "picture", "test", "http://farm9.staticflickr.com/8400/8653699786_8fac70c38a_h.jpg" ],
+		"thisProduct":"3",
+		"territory": [ "US", "ZZ", "US", "CA", "IN" ],
+		"testsPossibles":[  "makeNoVariationsProduct", "makeVariationsProduct",  "confirmWidgetMainView", "confirmWidgetDescripView", "confirmWidgetMerchantView", "confirmWidgetImageView", "confirmWidgetVideoView", "confirmWidgetShareState", "confirmWidgetCheckout", "logOut" , "confirmFBPost", "confirmTwitterTweet", "verifyPaypalPurchase", "verifyAmazonPurchase" ],
+		"tests":[  "confirmFBPost" ],
+		"newOption": [ "Feathers", "many", "few" ],
+		"widths": [ 320, 600, 900 ],
+		"buyQty":3,
+		"shippingData": [ "Moosh", "Tatoosh", "ii50@mailinator.com", "1411 4th Ave", "", "AnyWhere", "WA", "98101", "USA" ],
+		"landPageUrl":"http://api.test.diystorefronts.com/store/KbyuGm99mkiudqIqAPev5g",
+		"fbUser":"mmorgan@diymediaservices.com",
+		"fbPW":"moreaboutMoosh",
+		"messageFBPost":"From autoTesting 77 account:",
+		"twitterUser":"MooshGaloosh",
+		"twitterPW":"moreaboutMoosh",
+		"shipCost":[ 2 , 1 ]
+		
+	  },
+	  "verifyData":
+	  {
+		"testsPossibles":[ "installShopifyProdApp", "uninstallShopifyProdApp","installBCProdApp", "uninstallBCProdApp", "verifyApp", "newProductShoppost", "addShopifyProduct" ],
+		"tests":[   "installShopifyProdApp" ],
+		"installShopifyAcct": [ "https://shiny-sparkle-store.myshopify.com/admin/" , "squintymcblinded@sharklaser.com", "DishDish" ],
+		"shopifyAcctApps": "https://shiny-sparkle-store.myshopify.com/admin/apps",
+		"installShopifyAcct2": [ "https://install-zantler-test.myshopify.com/admin", "installzantler@zantler.com", "11testing11" ],
+		"installBCAcct": [ "https://login.mybigcommerce.com/login/" , "bigcommerce@zantler.com", "zantler4shoppost2" ],
+		"storeShopifyAcct": [ "https://new-nice.myshopify.com/admin/" , "newnice@nuclearsharks.com", "DishDish" ],
+		"storeShopifyAcct2": [ "https://berrywaffles.myshopify.com/admin/" , "geoffrey2@kowalski.com", "asdfasdf" ],
+		"storeBCAcct": [ "https://xxx.mybigcommerce.com/admin/" , "bigcommerce@zantler.com", "zantler4shoppost2" ],
+		"productData_sample": [ "title", "description", "price", "weight", "imageURL" ],
+		"productData": [ "Forest Tree", "Here is the test product for the SOU test, nothing more, nothing less - that's just right.", "123.45", "1", "C://Users//DIY//Desktop//MarkImages//theChase.jpg" ],
+		"productRepeat":1,
+		"widths": [320, 600, 900 ]
+		
+		
+	  }
+	  
+	  
+
+
+	
+	 
+}

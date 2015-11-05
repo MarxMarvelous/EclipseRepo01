@@ -1,0 +1,39 @@
+public abstract class AbstractParentPage { 
+
+  public int DRIVER_WAIT = 30; // 30 seconds 
+
+  public AbstractParentPage(WebDriver driver){ 
+        ElementLocatorFactory finder =  new AjaxElementLocatorFactory(driver, DRIVER_WAIT); 
+        PageFactory.initElements(finder, this); 
+        this.driver = driver; 
+   }
+   
+   //add services accessible to all pages here
+
+} 
+
+
+public class LoginPage extends AbstractParentPage{ 
+    @FindBy(id = "username") 
+    private WebElement usernameTextBox; 
+    @FindBy(id = "password") 
+    private WebElement passwordTextBox; 
+		
+    public LoginPage(WebDriver driver) { 
+            super(driver); 
+            ElementLocatorFactory finder =  new AjaxElementLocatorFactory(driver, DRIVER_WAIT); 
+            PageFactory.initElements(finder, this); 
+            this.driver = driver; 
+        } 
+
+    public HomePage login(String username, String password){ 
+            usernameTextBox.clear(); 
+            usernameTextBox.sendKeys(username); 
+            passwordTextBox.clear(); 
+            passwordTextBox.sendKeys(password); 
+            passwordTextBox.submit(); 
+            return new HomePage(driver); 
+
+        } 
+
+} 
